@@ -33,6 +33,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -149,6 +150,30 @@
     <script src="{{ asset('assets/assets/vendor/libs/popper/popper.js') }}"></script>
     <script src="{{ asset('assets/assets/vendor/js/bootstrap.js') }}"></script>
     <script src="{{ asset('assets/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+
+
+
+    <script>
+      // let button = document.querySelector('.add-row');
+      $('.add-row').click(function(e) {
+        e.preventDefault();
+
+        let newRow = "";
+
+        newRow +="<tr>";
+        newRow +="<td>ini td 1</td>";
+        newRow +="<td>ini td 2</td>";
+        newRow +="<td>ini td 3</td>";
+        newRow +="<td>ini td 4</td>";
+        newRow +="</tr>";
+
+        let tbody = $('.tbody-parent');
+        tbody.append(newRow);
+        
+      });
+    </script>
+
+
 
     <script src="{{ asset('assets/assets/vendor/js/menu.js') }}"></script>
     <!-- endbuild -->
