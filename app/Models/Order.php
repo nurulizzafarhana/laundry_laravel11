@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    protected $fillable = ['id_customer', 'order_code', 'order_date', 'order_end_date', 'order_status'];
+    protected $fillable = ['total_price', 'id_customer', 'order_code', 'order_date', 'order_end_date', 'order_status'];
     // protected $table = "type_of_services";
 
     //Object Relation Mapping/Model
